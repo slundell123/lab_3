@@ -1,0 +1,15 @@
+#!/bin/bash
+# Sarah Lundell
+# 9/20/2019
+# Script:
+echo "Enter a number: "
+read numOne
+echo "Enter a second number: "
+read numTwo
+#sum = $(($numOne + $numTwo))
+echo "The sum is : $(($numOne+$numTwo))"
+let prod=numOne*numTwo
+echo "The product is: $prod"
+echo "File Name: $0"
+echo "Command Line Argument 1: $1"
+echo $(grep $1 $2)
